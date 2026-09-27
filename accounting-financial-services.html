@@ -20,13 +20,8 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 .drift{animation:sbs-drift linear both;animation-timeline:view();animation-range:cover}
 }
 @media (prefers-reduced-motion: reduce){.reveal,.drift{animation:none!important}.lift:hover{transform:none}}
-.nav-dd{opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,10px);transition:opacity .2s ease,transform .25s cubic-bezier(.2,.7,.2,1),visibility .2s}
-.nav-item:hover .nav-dd,.nav-item:focus-within .nav-dd,.nav-dd.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0)}
-.nav-dd.is-closed{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
-.dd-link{transition:background .15s}
-.dd-link:hover,.dd-link:focus-visible{background:#F5F5F3}
-@media (prefers-reduced-motion: reduce){.nav-dd{transition:none}}
 </style>
+<link rel="stylesheet" href="assets/menu.css">
 <link rel="stylesheet" href="assets/mobile.css">
 </head>
 <body>
@@ -38,103 +33,16 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 <div class="site-bar" style="width: 100%; height: 84px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; padding: 0 64px; background: #FFFFFF; border-bottom: 1px solid #E4E4E1; font-family: 'Instrument Sans', system-ui, sans-serif; color: #333745">
 <a href="index.html" style="display: flex; align-items: center"><img src="assets/sbs-logo.png" alt="Smart Business Services — innovative outsourcing — home" style="width: 185px; height: 56px; display: block"></a>
 
-<nav aria-label="Main" style="display: flex; align-items: center; gap: 36px">
-<a href="index.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">Home</a>
-<a href="about.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">About</a>
-
-<div class="nav-item" style="position: relative; display: flex; align-items: center; height: 84px">
-<a href="services.html" aria-current="page" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid #F2D03B; padding-top: 3px; font-size: 16px; font-weight: 600; text-decoration: none; color: #333745">Services</a>
-
-<div id="services-menu" class="nav-dd " style="position: absolute; top: 100%; left: 50%; width: 780px; z-index: 60; padding-top: 8px">
-<div style="display: grid; grid-template-columns: minmax(0, 1fr) 232px; gap: 8px; padding: 10px; border-radius: 22px; background: #FFFFFF; box-shadow: 0 32px 64px -24px rgba(51,55,69,0.38), 0 0 0 1px rgba(51,55,69,0.07)">
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px">
-
-<a class="dd-link" href="accounting-financial-services.html" style="display: flex; gap: 14px; align-items: flex-start; padding: 14px; border-radius: 14px; color: #333745; text-decoration: none">
-<span aria-hidden="true" style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #E9F0F2; color: #29677F; display: flex; align-items: center; justify-content: center">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.5 7.5h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"></path></svg>
-</span>
-<span style="display: flex; flex-direction: column; gap: 3px">
-<span style="font-size: 15px; font-weight: 600; line-height: 1.3">Accounting &amp; Financial</span>
-<span style="font-size: 13.5px; line-height: 1.45; color: #6B6E76">Bookkeeping, statements, budgets, GovCon</span>
-</span>
-</a>
-
-<a class="dd-link" href="payroll-benefits-management.html" style="display: flex; gap: 14px; align-items: flex-start; padding: 14px; border-radius: 14px; color: #333745; text-decoration: none">
-<span aria-hidden="true" style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #E9F0F2; color: #29677F; display: flex; align-items: center; justify-content: center">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v13H3zM3 10h18M7 15h4"></path></svg>
-</span>
-<span style="display: flex; flex-direction: column; gap: 3px">
-<span style="font-size: 15px; font-weight: 600; line-height: 1.3">Payroll &amp; Benefits</span>
-<span style="font-size: 13.5px; line-height: 1.45; color: #6B6E76">One all-inclusive fee, dedicated staff</span>
-</span>
-</a>
-
-<a class="dd-link" href="tax-preparation-planning.html" style="display: flex; gap: 14px; align-items: flex-start; padding: 14px; border-radius: 14px; color: #333745; text-decoration: none">
-<span aria-hidden="true" style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #E9F0F2; color: #29677F; display: flex; align-items: center; justify-content: center">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6"></path></svg>
-</span>
-<span style="display: flex; flex-direction: column; gap: 3px">
-<span style="font-size: 15px; font-weight: 600; line-height: 1.3">Tax Preparation &amp; Planning</span>
-<span style="font-size: 13.5px; line-height: 1.45; color: #6B6E76">Year-round planning and returns</span>
-</span>
-</a>
-
-<a class="dd-link" href="marketing-administrative-services.html" style="display: flex; gap: 14px; align-items: flex-start; padding: 14px; border-radius: 14px; color: #333745; text-decoration: none">
-<span aria-hidden="true" style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #E9F0F2; color: #29677F; display: flex; align-items: center; justify-content: center">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h3l6 4V5L7 9H4a1 1 0 0 0-1 1zM17 9a4 4 0 0 1 0 6"></path></svg>
-</span>
-<span style="display: flex; flex-direction: column; gap: 3px">
-<span style="font-size: 15px; font-weight: 600; line-height: 1.3">Marketing &amp; Administrative</span>
-<span style="font-size: 13.5px; line-height: 1.45; color: #6B6E76">Newsletters, campaigns, events</span>
-</span>
-</a>
-
-<a class="dd-link" href="association-services.html" style="display: flex; gap: 14px; align-items: flex-start; padding: 14px; border-radius: 14px; color: #333745; text-decoration: none">
-<span aria-hidden="true" style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #E9F0F2; color: #29677F; display: flex; align-items: center; justify-content: center">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 20v-1a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"></path></svg>
-</span>
-<span style="display: flex; flex-direction: column; gap: 3px">
-<span style="font-size: 15px; font-weight: 600; line-height: 1.3">Association Services</span>
-<span style="font-size: 13.5px; line-height: 1.45; color: #6B6E76">Meetings, databases, accounting</span>
-</span>
-</a>
-
-<a class="dd-link" href="sbs-delmarva.html" style="display: flex; gap: 14px; align-items: flex-start; padding: 14px; border-radius: 14px; color: #333745; text-decoration: none">
-<span aria-hidden="true" style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #E9F0F2; color: #29677F; display: flex; align-items: center; justify-content: center">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21zM12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path></svg>
-</span>
-<span style="display: flex; flex-direction: column; gap: 3px">
-<span style="font-size: 15px; font-weight: 600; line-height: 1.3">SBS Delmarva</span>
-<span style="font-size: 13.5px; line-height: 1.45; color: #6B6E76">Our Selbyville, Delaware office</span>
-</span>
-</a>
-
-<a class="dd-link" href="services.html" style="grid-column: span 2; display: flex; align-items: center; justify-content: space-between; margin-top: 4px; padding: 14px; border-top: 1px solid #EDEDEA; border-radius: 0 0 14px 14px; color: #29677F; font-size: 14px; font-weight: 600; text-decoration: none">View all services
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-</div>
-<a href="startup-services.html" style="display: flex; flex-direction: column; gap: 10px; padding: 22px; border-radius: 16px; background: #F2D03B; color: #333745; text-decoration: none">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase">New business?</span>
-<span style="font-family: Fraunces, Georgia, serif; font-size: 26px; line-height: 1.1">Startup Services</span>
-<span style="font-size: 14px; line-height: 1.5">Entity selection, planning, accounting setup, and tax — from day one.</span>
-<span style="display: flex; align-items: center; gap: 6px; margin-top: auto; font-size: 14px; font-weight: 600">Get started
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
-</a>
-</div>
-</div>
-</div>
-
-<a href="contact.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">Contact</a>
-</nav>
-
 <a class="site-cta" href="contact.html" style="display: flex; align-items: center; gap: 8px; height: 48px; padding: 0 22px; border-radius: 999px; background: #F2D03B; color: #333745; font-size: 15px; font-weight: 600; text-decoration: none">Free consultation
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-<button type="button" class="m-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu">
+<button type="button" class="m-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
 <svg class="m-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
 <svg class="m-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+<span class="m-text">Menu</span>
 </button>
 </div>
-<div id="mobile-menu" class="m-menu">
-<nav aria-label="Mobile">
+<div id="site-menu" class="m-menu">
+<nav aria-label="Main">
 <div class="m-main">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
@@ -156,6 +64,12 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 <a class="m-cta" href="contact.html">Free consultation
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
 <a class="m-social" href="https://www.linkedin.com/company/smart-business-services" target="_blank" rel="noopener"><span class="m-social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"></path></svg></span>Follow us on LinkedIn</a>
+<div class="m-contact">
+<span class="m-label">Get in touch</span>
+<a href="mailto:kdolan@sbsnova.com">kdolan@sbsnova.com</a>
+<span>Fax 888-672-8383</span>
+<span>Fairfax, VA · Selbyville, DE</span>
+</div>
 </nav>
 </div>
 
@@ -305,33 +219,23 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 </div>
 <script>
 (function () {
-  var item = document.querySelector('.nav-item');
-  var menu = document.getElementById('services-menu');
-  if (!item || !menu) return;
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && item.contains(document.activeElement)) {
-      menu.classList.add('is-closed'); item.querySelector('a').focus();
-    }
-  });
-  item.addEventListener('mouseleave', function () { menu.classList.remove('is-closed'); });
-  item.addEventListener('focusout', function (e) { if (!item.contains(e.relatedTarget)) menu.classList.remove('is-closed'); });
-})();
-</script>
-<script>
-(function () {
   var btn = document.querySelector('.m-toggle');
-  var menu = document.getElementById('mobile-menu');
+  var menu = document.getElementById('site-menu');
   if (!btn || !menu) return;
+  var label = btn.querySelector('.m-text');
   function set(open) {
     menu.classList.toggle('is-open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     btn.setAttribute('aria-label', open ? 'Close menu' : 'Menu');
+    label.textContent = open ? 'Close' : 'Menu';
   }
-  btn.addEventListener('click', function () { set(!menu.classList.contains('is-open')); });
+  btn.addEventListener('click', function (e) { e.stopPropagation(); set(!menu.classList.contains('is-open')); });
+  document.addEventListener('click', function (e) {
+    if (menu.classList.contains('is-open') && !menu.contains(e.target)) set(false);
+  });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && menu.classList.contains('is-open')) { set(false); btn.focus(); }
   });
-  window.matchMedia('(min-width: 1101px)').addEventListener('change', function (e) { if (e.matches) set(false); });
 })();
 </script>
 

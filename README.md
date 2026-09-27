@@ -25,4 +25,5 @@ Plain HTML and CSS with no build step. Open `index.html` in a browser, or serve 
 - Scroll effects (parallax, fade-in) use CSS scroll-driven animations. They run in Chrome, Edge, and recent Safari; other browsers show the pages without motion. Motion is turned off for visitors who set "reduce motion".
 - The contact form is not connected to anything yet. It needs a form service (for example Formspree or Netlify Forms) before it can send.
 - Team headshots live in `assets/team/`.
-- Tablet and phone layouts live in `assets/mobile.css`, linked from every page. Page styles are inline, so the overrides match on the inline style text and use `!important`. Below 1100px the header switches to a menu button that lists every page, including all services.
+- The header has no text links: a "Menu" button opens a panel (`assets/menu.css`) listing every page, including all services. On desktop it is a wide panel; below 1100px it becomes a stacked list.
+- Tablet and phone layouts live in `assets/mobile.css`. Page styles are inline, so the overrides match on the inline style text and use `!important`.
