@@ -23,12 +23,9 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 .nav-dd{opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,10px);transition:opacity .2s ease,transform .25s cubic-bezier(.2,.7,.2,1),visibility .2s}
 .nav-item:hover .nav-dd,.nav-item:focus-within .nav-dd,.nav-dd.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0)}
 .nav-dd.is-closed{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
-.nav-chev{transition:transform .2s}
-.nav-item:hover .nav-chev,.nav-item:focus-within .nav-chev,.nav-chev-btn[aria-expanded=true] .nav-chev{transform:rotate(180deg)}
-.nav-chev-btn:hover{background:#F3F3F1}
 .dd-link{transition:background .15s}
 .dd-link:hover,.dd-link:focus-visible{background:#F5F5F3}
-@media (prefers-reduced-motion: reduce){.nav-dd,.nav-chev{transition:none}}
+@media (prefers-reduced-motion: reduce){.nav-dd{transition:none}}
 </style>
 <link rel="stylesheet" href="assets/mobile.css">
 </head>
@@ -47,9 +44,6 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 
 <div class="nav-item" style="position: relative; display: flex; align-items: center; height: 84px">
 <a href="services.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">Services</a>
-<button type="button" class="nav-chev-btn" aria-expanded="false" aria-controls="services-menu" aria-label="Show all services" style="width: 44px; height: 44px; margin-left: -6px; border: 0; border-radius: 10px; background: transparent; color: #5A5D66; display: flex; align-items: center; justify-content: center; cursor: pointer">
-<svg class="nav-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
-</button>
 
 <div id="services-menu" class="nav-dd " style="position: absolute; top: 100%; left: 50%; width: 780px; z-index: 60; padding-top: 8px">
 <div style="display: grid; grid-template-columns: minmax(0, 1fr) 232px; gap: 8px; padding: 10px; border-radius: 22px; background: #FFFFFF; box-shadow: 0 32px 64px -24px rgba(51,55,69,0.38), 0 0 0 1px rgba(51,55,69,0.07)">
@@ -129,7 +123,6 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 </div>
 </div>
 
-<a href="startup-services.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">Startup Services</a>
 <a href="contact.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">Contact</a>
 </nav>
 
@@ -162,6 +155,7 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 </div>
 <a class="m-cta" href="contact.html">Free consultation
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="m-social" href="https://www.linkedin.com/company/smart-business-services" target="_blank" rel="noopener"><span class="m-social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"></path></svg></span>Follow us on LinkedIn</a>
 </nav>
 </div>
 
@@ -360,6 +354,9 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 <div style="grid-column: span 3; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; align-self: flex-start; padding: 14px 18px; border-radius: 14px; background: #FFFFFF"><img src="assets/sbs-logo.png" alt="Smart Business Services — innovative outsourcing" style="width: 185px; height: 56px; display: block"></div>
 <p style="margin: 0; max-width: 320px; font-size: 16px; line-height: 1.6; color: #C8C8C8">Accounting, payroll, tax, marketing, and administrative services since 1998.</p>
+<div style="display: flex; gap: 10px">
+<a href="https://www.linkedin.com/company/smart-business-services" target="_blank" rel="noopener" aria-label="Smart Business Services on LinkedIn" style="width: 44px; height: 44px; box-sizing: border-box; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); color: #FFFFFF; display: flex; align-items: center; justify-content: center; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"></path></svg></a>
+</div>
 </div>
 <nav aria-label="Footer" style="grid-column: 4 / span 5; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); column-gap: 24px; align-items: start; font-size: 15px">
 <div style="display: flex; flex-direction: column; gap: 12px">
@@ -401,24 +398,16 @@ a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
 </div>
 <script>
 (function () {
-  var btn = document.querySelector('.nav-chev-btn');
+  var item = document.querySelector('.nav-item');
   var menu = document.getElementById('services-menu');
-  if (!btn || !menu) return;
-  var item = btn.closest('.nav-item');
-  function set(open) {
-    menu.classList.toggle('is-open', open);
-    menu.classList.remove('is-closed');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-  }
-  btn.addEventListener('click', function (e) { e.stopPropagation(); set(!menu.classList.contains('is-open')); });
-  document.addEventListener('click', function (e) { if (!item.contains(e.target)) set(false); });
+  if (!item || !menu) return;
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && (menu.classList.contains('is-open') || item.contains(document.activeElement))) {
-      set(false); menu.classList.add('is-closed'); btn.focus();
+    if (e.key === 'Escape' && item.contains(document.activeElement)) {
+      menu.classList.add('is-closed'); item.querySelector('a').focus();
     }
   });
   item.addEventListener('mouseleave', function () { menu.classList.remove('is-closed'); });
-  btn.addEventListener('blur', function () { menu.classList.remove('is-closed'); });
+  item.addEventListener('focusout', function (e) { if (!item.contains(e.relatedTarget)) menu.classList.remove('is-closed'); });
 })();
 </script>
 <script>
