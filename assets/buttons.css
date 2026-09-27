@@ -1,0 +1,64 @@
+/* Hover, press and keyboard-focus states for buttons and card arrows.
+   Page styles are inline, so these match on the inline style text and use
+   !important where they change a colour set inline. */
+
+/* Form buttons use the site font rather than the browser default */
+button{font-family:inherit}
+
+/* ---------- Pill buttons ---------- */
+a[style*="border-radius: 999px"],
+button[style*="border-radius: 999px"],
+.m-toggle,.m-cta{
+  transition:background-color .2s ease,color .2s ease,border-color .2s ease,box-shadow .25s ease,transform .25s cubic-bezier(.2,.7,.2,1)!important;
+}
+a[style*="border-radius: 999px"]:hover,
+button[style*="border-radius: 999px"]:hover,
+.m-cta:hover{transform:translateY(-2px)}
+a[style*="border-radius: 999px"]:active,
+button[style*="border-radius: 999px"]:active,
+.m-toggle:active,.m-cta:active{transform:translateY(0) scale(.98);transition-duration:.08s!important}
+
+/* Yellow (primary) */
+a[style*="background: #F2D03B"][style*="border-radius: 999px"]:hover,
+button[style*="background: #F2D03B"][style*="border-radius: 999px"]:hover,
+.m-cta:hover{background:#FFDD4A!important;color:#333745!important;box-shadow:0 12px 24px -10px rgba(214,176,20,.75)}
+
+/* Dark */
+a[style*="background: #333745"][style*="border-radius: 999px"]:hover{background:#29677F!important;box-shadow:0 12px 24px -12px rgba(41,103,127,.7)}
+
+/* White, on dark sections */
+a[style*="background: #FFFFFF"][style*="border-radius: 999px"]:hover{background:#F2D03B!important;color:#333745!important;box-shadow:0 12px 24px -12px rgba(0,0,0,.5)}
+
+/* Outline, on light sections */
+a[style*="border: 1px solid #333745"][style*="border-radius: 999px"]:hover{background:#333745!important;color:#FFFFFF!important;box-shadow:0 12px 24px -12px rgba(51,55,69,.6)}
+
+/* Outline, on dark sections (includes the footer LinkedIn icon) */
+a[style*="border: 1px solid rgba(255,255,255"][style*="border-radius: 999px"]:hover{background:#FFFFFF!important;border-color:#FFFFFF!important;color:#333745!important;box-shadow:0 12px 24px -12px rgba(0,0,0,.5)}
+
+/* Contact form topic chips: lift only, their pressed colours are set by script */
+button[aria-pressed][style*="border-radius: 999px"]:hover{border-color:#F2D03B!important}
+
+/* Menu button */
+.m-toggle:hover{border-color:#333745!important;background:#FFFFFF!important}
+
+/* ---------- Arrows ---------- */
+a svg:has(path[d^="M5 12h14"]),button svg:has(path[d^="M5 12h14"]){transition:transform .25s cubic-bezier(.2,.7,.2,1)}
+a:hover svg:has(path[d^="M5 12h14"]),button:hover svg:has(path[d^="M5 12h14"]){transform:translateX(4px)}
+
+/* Card arrows (↗): circle fills and the arrow nudges up-right */
+a span[style*="border-radius: 999px"]:has(svg path[d^="M7 17L17 7"]){transition:background-color .25s ease,color .25s ease,border-color .25s ease}
+a svg:has(path[d^="M7 17L17 7"]){transition:transform .25s cubic-bezier(.2,.7,.2,1)}
+a:hover span[style*="border-radius: 999px"]:has(svg path[d^="M7 17L17 7"]){background:#F2D03B!important;border-color:#F2D03B!important;color:#333745}
+a:hover svg:has(path[d^="M7 17L17 7"]){transform:translate(2px,-2px)}
+
+/* Menu LinkedIn link */
+.m-social-icon{transition:background-color .2s ease,color .2s ease}
+.m-social:hover .m-social-icon{background:#29677F;color:#FFFFFF}
+
+/* ---------- Keyboard focus ---------- */
+a:focus-visible,button:focus-visible{outline:none;box-shadow:0 0 0 3px #FFFFFF,0 0 0 5px #29677F!important;border-radius:999px}
+
+@media (prefers-reduced-motion: reduce){
+  a,button,a svg,button svg{transition:none!important}
+  a:hover,button:hover,a:hover svg,button:hover svg,a:active,button:active{transform:none!important}
+}
