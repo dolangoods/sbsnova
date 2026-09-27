@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SBS Nova — Services</title>
+<meta name="description" content="Smart Business Services — innovative outsourcing. Accounting, payroll, tax, marketing, and administrative services since 1998.">
+<link rel="icon" href="assets/sbs-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#333745}
+a{color:#29677F;text-decoration:none}a:hover{color:#1D4C5E}
+.lift{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.lift:hover{transform:translateY(-6px);box-shadow:0 28px 48px -28px rgba(51,55,69,.4)}
+@keyframes sbs-rise{from{opacity:0;transform:translateY(56px)}to{opacity:1;transform:none}}
+@keyframes sbs-drift{from{transform:translateY(var(--from,0px))}to{transform:translateY(var(--to,0px))}}
+@supports (animation-timeline: view()){
+.reveal{animation:sbs-rise linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+.drift{animation:sbs-drift linear both;animation-timeline:view();animation-range:cover}
+}
+@media (prefers-reduced-motion: reduce){.reveal,.drift{animation:none!important}.lift:hover{transform:none}}
+</style>
+</head>
+<body>
+<div style="width: 100%; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; font-family: 'Instrument Sans', system-ui, sans-serif; color: #333745">
+
+<div style="position: sticky; top: 0; z-index: 50">
+
+
+<div style="width: 100%; height: 84px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; padding: 0 64px; background: rgba(255,255,255,0.84); backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px); border-bottom: 1px solid rgba(51,55,69,0.08); font-family: 'Instrument Sans', system-ui, sans-serif; color: #333745">
+<a href="index.html" style="display: flex; align-items: center"><img src="assets/sbs-logo.png" alt="Smart Business Services — innovative outsourcing — home" style="width: 185px; height: 56px; display: block"></a>
+<nav aria-label="Main" style="display: flex; align-items: center; gap: 40px">
+
+<a href="index.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">Home</a>
+
+<a href="about.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">About</a>
+
+<a href="services.html" aria-current="page" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid #F2D03B; padding-top: 3px; font-size: 16px; font-weight: 600; text-decoration: none; color: #333745">Services</a>
+
+<a href="startup-services.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">Startup Services</a>
+
+<a href="contact.html" aria-current="false" style="display: flex; align-items: center; height: 84px; box-sizing: border-box; border-bottom: 3px solid transparent; padding-top: 3px; font-size: 16px; font-weight: 500; text-decoration: none; color: #5A5D66">Contact</a>
+
+</nav>
+<a href="contact.html" style="display: flex; align-items: center; gap: 8px; height: 48px; padding: 0 22px; border-radius: 999px; background: #F2D03B; color: #333745; font-size: 15px; font-weight: 600; text-decoration: none">Free consultation
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+
+</div>
+
+
+<section style="position: relative; overflow: hidden; padding: 120px 64px 112px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: end; background: #333745; color: #FFFFFF">
+<div class="drift" aria-hidden="true" style="position: absolute; right: -80px; bottom: -260px; width: 620px; height: 620px; border-radius: 999px; border: 80px solid rgba(242,208,59,0.16); --from: -60px; --to: 160px"></div>
+<div style="position: relative; grid-column: span 8; display: flex; flex-direction: column; gap: 28px">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #F2D03B">Services</span>
+<h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 88px; line-height: 1; letter-spacing: -0.03em">Your outsourced back office, <span style="font-style: italic">by the hour.</span></h1>
+<p style="margin: 0; max-width: 660px; font-size: 20px; line-height: 1.6; color: #C8C8C8">A dependable, experienced team of accountants, payroll and HR specialists, and marketing and administrative experts — at reasonable hourly rates. Pay only for the services you need, for as long as you need them.</p>
+</div>
+</section>
+
+
+<section style="display: flex; flex-direction: column; padding: 64px 64px 128px">
+
+<a class="reveal" href="accounting-financial-services.html" style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: start; padding: 56px 0; border-bottom: 1px solid #E4E4E1; color: #333745">
+<span style="grid-column: span 2; font-family: Fraunces, Georgia, serif; font-size: 88px; line-height: 0.9; color: #29677F">01</span>
+<div style="grid-column: 3 / span 5; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.05; letter-spacing: -0.01em">Accounting &amp; Financial Services</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #555862">Far more than recording transactions: interim financial statements, operating budgets, cash-flow forecasts, and projections to secure financing and keep shareholders informed.</p>
+</div>
+<div style="grid-column: 9 / span 3; display: flex; flex-direction: column; gap: 10px; padding-top: 12px">
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Bookkeeping &amp; statements</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Budgets &amp; forecasting</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Government contractor accounting</span>
+
+</div>
+<span style="grid-column: 12 / span 1; justify-self: end; width: 56px; height: 56px; border-radius: 999px; border: 1px solid #333745; display: flex; align-items: center; justify-content: center">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg>
+</span>
+</a>
+
+<a class="reveal" href="payroll-benefits-management.html" style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: start; padding: 56px 0; border-bottom: 1px solid #E4E4E1; color: #333745">
+<span style="grid-column: span 2; font-family: Fraunces, Georgia, serif; font-size: 88px; line-height: 0.9; color: #29677F">02</span>
+<div style="grid-column: 3 / span 5; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.05; letter-spacing: -0.01em">Payroll &amp; Benefits Management</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #555862">Payroll tailored to each client — never one-size-fits-all — at a competitive, all-inclusive price, with the same experts supporting you every time.</p>
+</div>
+<div style="grid-column: 9 / span 3; display: flex; flex-direction: column; gap: 10px; padding-top: 12px">
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>No fees for reruns</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>APA-certified team</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Benefits partners</span>
+
+</div>
+<span style="grid-column: 12 / span 1; justify-self: end; width: 56px; height: 56px; border-radius: 999px; border: 1px solid #333745; display: flex; align-items: center; justify-content: center">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg>
+</span>
+</a>
+
+<a class="reveal" href="tax-preparation-planning.html" style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: start; padding: 56px 0; border-bottom: 1px solid #E4E4E1; color: #333745">
+<span style="grid-column: span 2; font-family: Fraunces, Georgia, serif; font-size: 88px; line-height: 0.9; color: #29677F">03</span>
+<div style="grid-column: 3 / span 5; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.05; letter-spacing: -0.01em">Tax Preparation &amp; Planning</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #555862">Your year-round tax consultant, combining accounting expertise with planning and return preparation for full federal, state, and local compliance.</p>
+</div>
+<div style="grid-column: 9 / span 3; display: flex; flex-direction: column; gap: 10px; padding-top: 12px">
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Individuals &amp; families</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Corporations &amp; nonprofits</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Estates</span>
+
+</div>
+<span style="grid-column: 12 / span 1; justify-self: end; width: 56px; height: 56px; border-radius: 999px; border: 1px solid #333745; display: flex; align-items: center; justify-content: center">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg>
+</span>
+</a>
+
+<a class="reveal" href="marketing-administrative-services.html" style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: start; padding: 56px 0; border-bottom: 1px solid #E4E4E1; color: #333745">
+<span style="grid-column: span 2; font-family: Fraunces, Georgia, serif; font-size: 88px; line-height: 0.9; color: #29677F">04</span>
+<div style="grid-column: 3 / span 5; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.05; letter-spacing: -0.01em">Marketing &amp; Administrative Services</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #555862">Good marketing takes specialized skill. We add back-office muscle for everyday operations and special projects alike.</p>
+</div>
+<div style="grid-column: 9 / span 3; display: flex; flex-direction: column; gap: 10px; padding-top: 12px">
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>E-newsletters</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Email &amp; direct mail</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Corporate event planning</span>
+
+</div>
+<span style="grid-column: 12 / span 1; justify-self: end; width: 56px; height: 56px; border-radius: 999px; border: 1px solid #333745; display: flex; align-items: center; justify-content: center">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg>
+</span>
+</a>
+
+<a class="reveal" href="association-services.html" style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: start; padding: 56px 0; border-bottom: 1px solid #E4E4E1; color: #333745">
+<span style="grid-column: span 2; font-family: Fraunces, Georgia, serif; font-size: 88px; line-height: 0.9; color: #29677F">05</span>
+<div style="grid-column: 3 / span 5; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.05; letter-spacing: -0.01em">Association Services</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #555862">In partnership with ConferenceDirect, a full suite of services for associations — saving you time and money.</p>
+</div>
+<div style="grid-column: 9 / span 3; display: flex; flex-direction: column; gap: 10px; padding-top: 12px">
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Meeting management</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Database development</span>
+
+<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #333745"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 999px; background: #F2D03B; flex-shrink: 0"></span>Outsourced accounting</span>
+
+</div>
+<span style="grid-column: 12 / span 1; justify-self: end; width: 56px; height: 56px; border-radius: 999px; border: 1px solid #333745; display: flex; align-items: center; justify-content: center">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg>
+</span>
+</a>
+
+</section>
+
+
+<section style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding: 0 64px 160px">
+<a class="lift reveal" href="sbs-delmarva.html" style="display: flex; flex-direction: column; gap: 20px; min-height: 360px; box-sizing: border-box; padding: 48px; border-radius: 32px; background: #E9F0F2; color: #333745">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #29677F">Now on the shore</span>
+<h2 style="margin: 0; margin-top: auto; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 48px; line-height: 1.05">SBS Delmarva</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #555862">The same team and services for businesses across Delaware, Maryland, and Virginia, from our Selbyville office.</p>
+</a>
+<a class="lift reveal" href="startup-services.html" style="display: flex; flex-direction: column; gap: 20px; min-height: 360px; box-sizing: border-box; padding: 48px; border-radius: 32px; background: #F2D03B; color: #333745">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase">Starting a new business?</span>
+<h2 style="margin: 0; margin-top: auto; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 48px; line-height: 1.05">Startup Services</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #333745">Entity selection, business planning, accounting setup, marketing, and tax — everything to open your doors right.</p>
+</a>
+</section>
+
+
+
+<footer style="width: 100%; height: 780px; box-sizing: border-box; display: flex; flex-direction: column; padding: 96px 64px 40px; background: #333745; color: #FFFFFF; font-family: 'Instrument Sans', system-ui, sans-serif">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; padding-bottom: 72px; border-bottom: 1px solid rgba(255,255,255,0.14)">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #F2D03B">Free consultation</span>
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1.04; letter-spacing: -0.02em">Let’s talk about <span style="font-style: italic">your books.</span></h2>
+</div>
+<div style="display: flex; gap: 12px">
+<a href="contact.html" style="display: flex; align-items: center; gap: 10px; height: 60px; padding: 0 30px; border-radius: 999px; background: #F2D03B; color: #333745; font-size: 17px; font-weight: 600; text-decoration: none">Get in touch
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a href="mailto:kdolan@sbsnova.com" style="display: flex; align-items: center; height: 60px; padding: 0 28px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.4); color: #FFFFFF; font-size: 17px; font-weight: 600; text-decoration: none">kdolan@sbsnova.com</a>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; padding-top: 64px; flex-grow: 1">
+<div style="grid-column: span 4; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; align-self: flex-start; padding: 14px 18px; border-radius: 14px; background: #FFFFFF"><img src="assets/sbs-logo.png" alt="Smart Business Services — innovative outsourcing" style="width: 185px; height: 56px; display: block"></div>
+<p style="margin: 0; max-width: 320px; font-size: 16px; line-height: 1.6; color: #C8C8C8">Accounting, payroll, tax, marketing, and administrative services since 1998.</p>
+</div>
+<nav aria-label="Footer" style="grid-column: 6 / span 2; display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<span style="font-weight: 600; margin-bottom: 4px">Company</span>
+<a href="about.html" style="color: #C8C8C8; text-decoration: none">About</a>
+<a href="services.html" style="color: #C8C8C8; text-decoration: none">Services</a>
+<a href="startup-services.html" style="color: #C8C8C8; text-decoration: none">Startup Services</a>
+<a href="sbs-delmarva.html" style="color: #C8C8C8; text-decoration: none">SBS Delmarva</a>
+<a href="contact.html" style="color: #C8C8C8; text-decoration: none">Contact</a>
+</nav>
+<div style="grid-column: 8 / span 2; display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<span style="font-weight: 600; margin-bottom: 4px">Northern Virginia</span>
+<span style="color: #C8C8C8">4820 Fox Chapel Rd</span>
+<span style="color: #C8C8C8">Fairfax, VA 22030</span>
+</div>
+<div style="grid-column: 10 / span 3; display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<span style="font-weight: 600; margin-bottom: 4px">Delmarva</span>
+<span style="color: #C8C8C8">36328 Waterleaf Way</span>
+<span style="color: #C8C8C8">Selbyville, DE 19975</span>
+<span style="color: #C8C8C8; margin-top: 12px">Fax 888-672-8383</span>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.14); font-size: 14px; color: #C8C8C8">
+<span>© 2026 Smart Business Services</span>
+<span>Washington DC · Northern Virginia · Baltimore · Delmarva</span>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
